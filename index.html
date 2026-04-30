@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sandora - Digital Agency</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="icon" href="images/logo.png" type="image/png">
+</head>
+
+<body class="body">
+  <!-- Header -->
+  <header class="header">
+    <a class="logo-cont" href="index.html">
+      <img class="im1" src="images/logo.png" alt="Sandora Logo" />
+      <span class="l1"><strong>Sandora</strong></span>
+    </a>
+    
+    <nav class="menu-box">
+      <a href="#explore" class="menu-1">Services</a>
+      <a href="#process" class="menu-1">Process</a>
+      <a href="#about" class="menu-1">About</a>
+      <button class="signup-btn"><strong>Get Started</strong></button>
+    </nav>
+
+    <button class="ham-menu" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <!-- Overlays -->
+  <div class="over-lays"></div>
+  <div class="over-lay"></div>
+
+  <!-- Mobile Menu -->
+  <nav class="mobile-menu-box" aria-hidden="true">
+      <a href="index.html">Home</a>
+    <a href="index.html#explore">Services</a>
+    <a href="#process">Process</a>
+    <a href="#about">About</a>
+    <a href="#about">Contact Us</a>
+    <button class="mobile-signup-btn"><strong>Get Started</strong></button>
+  </nav>
+
+  <!-- Signup Modal -->
+  <div class="signup-page">
+    <button class="close-menu" aria-label="Close modal">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <div class="input">
+      <div class="top-cont">
+        <h2 id="signup-title" class="signup-h1"><strong>Start a <span class="p-highlight">Project</span></strong></h2>
+        <div class="divider">
+          <p class="text">Let's build something amazing together. Fill out this form below and I'll get back to you within 24 hours.</p>
+        </div>
+      </div>
+      
+      
+          
+          <input class="email" type="text" id="fullName" placeholder="Full Name" required />
+     
+          
+          <input class="email1" type="text" id="email" placeholder="Email" required />
+        
+      
+      
+      <select class="budget-selection" id="budget" required>
+        <option value="">Select your budget range</option>
+        <option value="50000">₦50,000</option>
+        <option value="100000">₦100,000</option>
+        <option value="150000">₦150,000</option>
+        <option value="200000">₦200,000</option>
+      </select>
+
+      
+      <textarea class="project-description" id="description" rows="2" placeholder="Tell me about your project..." required></textarea>
+      
+      <button type="submit" class="signup-button"><span class="sign">Submit</span></button>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="con-1">
+    <div class="con-2">
+      <div class="heading-box">
+        <div class="badge">
+          <span class="dot"></span>
+          Future-Focused Agency
+        </div>
+        <h1 class="h1"><strong>Building Digital <span class="highlight-1">Experiences</span> That Scale</strong></h1>
+      </div>
+
+      <div class="pg-box">
+        <p class="san">We design and develop high-performance websites, mobile apps and web applications for modern businesses ready to innovate.</p>
+      </div>
+      
+      <div class="btn-con">
+        <button class="btn-1">Get a Quote</button>
+        <a href="#explore"  class="link"><button  class="btn-2">View Our Work</button></a> 
+      </div>
+      
+      <div class="prf-rating-container">
+        <img class="prf-icon" src="images/profilepic.jpeg" alt="Client 1" />
+        <img class="prf-icon1" src="images/profilepic2.png" alt="Client 2" />
+        <img class="prf-icon2" src="images/profilepic3.png" alt="Client 3" />
+        <p class="prf-label">Trusted By 2000+ Companies</p>
+      </div>
+    </div>
+    
+    <div class="img-con">
+      <img class="home-img" src="images/homeBG.png" alt="Digital workspace" />
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <span id="explore"></span>
+  <section class="work-cnt">
+    <p class="wrk-heading">Our Experiences</p>
+    <h2 class="wrk-heading2"><strong>Everything you need to scale</strong></h2>
+    <p class="prgh-1">We bring in design and technology to create seamless digital solutions that drive results.</p>
+    
+    <div class="service-cont1">
+      <article class="service-card1">
+        <div class="webicon-cont">
+          <img class="website-icon" src="images/websiteicon.png" alt="Web Development Icon" />
+        </div>
+        <h3 class="h2">Web Development</h3>
+        <p class="card-info">Custom websites built with modern frameworks like React, Vue, and Next.js for blazing performance.</p>
+      </article>
+
+      <article class="service-card1">
+        <div class="mobileicon-cont">
+          <img class="mobile-icon" src="images/mobileappicon.png" alt="Mobile App Icon" />
+        </div>
+        <h3 class="h3">Mobile App Development</h3>
+        <p class="card-info">Native and cross-platform mobile applications for iOS and Android that users love.</p>
+      </article>
+
+      <article class="service-card1">
+        <div class="webapp-icon-cont">
+          <img class="webapp-icon" src="images/webappicon.png" alt="Web App Icon" />
+        </div>
+        <h3 class="h4">Web Applications</h3>
+        <p class="card-info">Complex, data-driven web applications designed to streamline your business operations.</p>
+      </article>
+    </div>
+<br />
+<br/>
+    <div class="service-cont2">
+      <article class="service-card1">
+        <div class="ui-ux-icon-cont">
+          <img class="ui-ux-icon" src="images/Ui&Ux.png" alt="UI/UX Design Icon" />
+        </div>
+        <h3 class="h5">UI/UX Design</h3>
+        <p class="card-info">User-centric design that balances aesthetics with functionality to create intuitive interfaces.</p>
+      </article>
+
+      <article class="service-card1">
+        <div class="backend-icon-cont">
+          <img class="backend-icon" src="images/Api&backend.png" alt="API & Backend Icon" />
+        </div>
+        <h3 class="h6">API & Backend</h3>
+        <p class="card-info">Robust and scalable backend architectures to power your applications securely.</p>
+      </article>
+
+      <article class="service-card1">
+        <div class="digitalstrategy-icon-cont">
+          <img class="dstrategy-icon" src="images/digitalstrategy.png" alt="Digital Strategy Icon" />
+        </div>
+        <h3 class="hh1">Digital Strategy</h3>
+        <p class="card-info">Data-driven insights and strategic planning to position your product for market success.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Process Section -->
+  <span id="process"></span>
+  <section class="work-process-cont">
+    <p class="wrk-process-heading">How We Work</p>
+    <h2 class="wrk-process-heading2"><strong>From Concept to Launch</strong></h2>
+
+    <div class="center-line"></div>
+
+    <div class="process-cont">
+      <article class="process-card">
+        <div class="img-container">
+          <img class="discovery-icon" src="images/discovery.png" alt="Discovery Phase" />
+        </div>
+        <div>
+          <h3 class="process-card-h1">Discovery</h3>
+          <p class="process-card-prgh">We dive deep into your business goals, user needs and market landscape.</p>
+        </div>
+      </article>
+
+      <article class="process-card">
+        <div class="img-container">
+          <img class="design-icon" src="images/design.png" alt="Design Phase" />
+        </div>
+        <div>
+          <h3 class="process-card-h1">Strategy & Design</h3>
+          <p class="process-card-prgh">We craft the blueprint and design intuitive interfaces that engage users.</p>
+        </div>
+      </article>
+
+      <article class="process-card">
+        <div class="img-container">
+          <img class="development-icon" src="images/code.png" alt="Development Phase" />
+        </div>
+        <div>
+          <h3 class="process-card-h1">Development</h3>
+          <p class="process-card-prgh">Our engineers build robust, scalable solutions using clean code practices.</p>
+        </div>
+      </article>
+
+      <article class="process-card">
+        <div class="img-container">
+          <img class="launch-icon" src="images/launch.png" alt="Launch Phase" />
+        </div>
+        <div>
+          <h3 class="process-card-h1">Launch & Support</h3>
+          <p class="process-card-prgh">We deploy your product and provide ongoing support to ensure success.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Why Choose Us Section -->
+  <section class="items-cont">
+    <div class="process-cont2">
+      <h2 class="process-card-heading">Why leading companies choose Sandora</h2>
+      <p class="first-prgh">We don't just build software, we build digital assets that become the backbone of your business growth.</p>
+
+      <article class="process-card2">
+        <h3 class="process-card-h2">Agile Workflow</h3>
+        <p class="process-card-prgh2">Rapid iteration and constant feedback loops to ensure we're always aligned with your vision.</p>
+      </article>
+
+      <article class="process-card2">
+        <h3 class="process-card-h2">Scalable Architecture</h3>
+        <p class="process-card-prgh2">Built to handle growth from day one, ensuring your platform performs as you expand.</p>
+      </article>
+
+      <article class="process-card2">
+        <h3 class="process-card-h2">Clean, Maintainable Code</h3>
+        <p class="process-card-prgh2">High-quality code standards that make future updates and maintenance effortless.</p>
+      </article>
+
+      <article class="process-card2">
+        <h3 class="process-card-h2">Fast Turnaround Time</h3>
+        <p class="process-card-prgh2">Efficient processes that get your product to market faster without compromising quality.</p>
+      </article>
+    </div>
+
+    <img class="end-img" src="images/secondBG.jpeg" alt="Team collaboration" />
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stat-cont" aria-label="Company Statistics">
+    <div>
+      <p class="stat-h1">150+</p>
+      <p class="stat-prgh">Projects Delivered</p>
+    </div>
+    <div>
+      <p class="stat-h1">50+</p>
+      <p class="stat-prgh">Happy Clients</p>
+    </div>
+    <div>
+      <p class="stat-h1">5+</p>
+      <p class="stat-prgh">Years of Experience</p>
+    </div>
+    <div>
+      <p class="stat-h1">98%</p>
+      <p class="stat-prgh">Client Satisfaction</p>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="review-cont">
+    <h2 class="review-h1">Trusted by Innovators</h2>
+    <p class="review-prgh">Don't just take our word for it, here's what our clients have to say.</p>
+
+    <div class="main-rating-card-cont">
+      <article class="rating-card">
+        <img class="rating-img" src="images/rating.png" alt="5 star rating" />
+        <blockquote class="rating-text">"Sandora delivered a robust platform that scaled effortlessly with our user base. Their attention to detail is unmatched."</blockquote>
+        <p class="clients-name"><strong>Michael Chen</strong></p>
+      </article>
+
+      <article class="rating-card">
+        <img class="rating-img" src="images/rating.png" alt="5 star rating" />
+        <blockquote class="rating-text">"The UI/UX design completely transformed our product. Engagement increased by 40% in the first month of launch."</blockquote>
+        <p class="clients-name"><strong>Elena Rodriguez</strong></p>
+      </article>
+
+      <article class="rating-card">
+        <img class="rating-img" src="images/rating.png" alt="5 star rating" />
+        <blockquote class="rating-text">"Professional, responsive and incredible interface. They felt like an extension of our external team throughout the project."</blockquote>
+        <p class="clients-name"><strong>James Wilson</strong></p>
+      </article>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <span id="about"></span>
+  <section class="action-cont">
+    <h2 class="action-h1">Let's Build Something Exceptional Together</h2>
+    <div class="scale">
+      <p class="action-prgh">Ready to transform your digital presence? Get in touch and let's discuss how we can help you scale.</p>
+    </div>
+    <div class="button-container">
+      <button class="action-btn1">Start Your Project</button>
+      <button class="action-btn2">Schedule a Call</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bottom">
+    <div class="footer-links">
+      <div>
+        <div class="footer-top">
+          <img src="images/logo.png" alt="Sandora Logo" class="logo">
+          <p class="tech"><strong>SANDORA</strong></p>
+        </div>
+        <p class="footer-top-prgh">We design and develop high-performance digital experiences for forward-thinking companies.</p>
+      </div>
+
+      <div>
+        <p class="heading"><strong>Legal</strong></p>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+
+      <div>
+        <p class="heading"><strong>Services</strong></p>
+        <a href="index.html">Websites</a>
+        <a href="#">Mobile App</a>
+        <a href="#">API Integration</a>
+        <a href="#">Domain</a>
+      </div>
+
+      <div class="newsletter">
+        <p class="heading"><strong>Stay Updated</strong></p>
+        <p class="newsletter-prgh">Subscribe to our newsletter for the latest tech insights.</p>
+        <form>
+          <input type="email" placeholder="Enter your email" aria-label="Email for newsletter" />
+          <button type="submit"><span>Subscribe</span></button>
+        </form>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // DOM Elements
+    const signupBtn = document.querySelector('.signup-btn');
+    const signupPage = document.querySelector('.signup-page');
+    const overlay = document.querySelector('.over-lay');
+    const body = document.querySelector('body');
+    const hamMenu = document.querySelector('.ham-menu');
+    const mobileMenuBox = document.querySelector('.mobile-menu-box');
+    const overlayMobile = document.querySelector('.over-lays');
+    const closeMenu = document.querySelector('.close-menu');
+    const mobileSignupBtn = document.querySelector('.mobile-signup-btn');
+    const btn1 = document.querySelector('.btn-1');
+    const actionBtn1 = document.querySelector('.action-btn1');
+
+   
+    
+
+    // Helper functions
+    const lockScroll = () => body.classList.add('no-scroll');
+    const unlockScroll = () => body.classList.remove('no-scroll');
+    const openSignup = () => {
+      signupPage.classList.add('active');
+      overlay.classList.add('active');
+      lockScroll();
+    };
+    const closeSignup = () => {
+      signupPage.classList.remove('active');
+      overlay.classList.remove('active');
+      unlockScroll();
+    };
+    const toggleMobileMenu = () => {
+      hamMenu.classList.toggle('active');
+      mobileMenuBox.classList.toggle('active');
+      overlayMobile.classList.toggle('active');
+      body.classList.toggle('no-scroll');
+    };
+    const closeMobileMenu = () => {
+      hamMenu.classList.remove('active');
+      mobileMenuBox.classList.remove('active');
+      overlayMobile.classList.remove('active');
+      unlockScroll();
+    };
+
+    // Event Listeners
+
+const mobileLinks = document.querySelectorAll('.mobile-menu-box a');
+
+mobileLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    closeMobileMenu();
+  });
+});
+
+    signupBtn.addEventListener('click', openSignup);
+    mobileSignupBtn.addEventListener('click', () =>{
+    openSignup();
+    closeMobileMenu();
+    });
+
+    actionBtn1.addEventListener('click', () =>{
+    openSignup();
+    closeMobileMenu();
+    });
+
+    overlay.addEventListener('click', () => {
+      closeSignup();
+      closeMobileMenu();
+    });
+    overlayMobile.addEventListener('click', closeMobileMenu);
+    hamMenu.addEventListener('click', toggleMobileMenu);
+    closeMenu.addEventListener('click', () => {
+      closeSignup();
+      closeMobileMenu();
+    });
+    btn1.addEventListener('click', ()=>{
+        openSignup();
+    });
+    
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeSignup();
+        closeMobileMenu();
+      }
+    });
+  </script>
+</body>
+</html>
