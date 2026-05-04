@@ -19,6 +19,7 @@
     <nav class="menu-box">
       <a href="#explore" class="menu-1">Services</a>
       <a href="#process" class="menu-1">Process</a>
+      <a href="#project" class="menu-1">Project</a>
       <a href="#about" class="menu-1">About</a>
       <button class="signup-btn"><strong>Get Started</strong></button>
     </nav>
@@ -39,6 +40,7 @@
       <a href="index.html">Home</a>
     <a href="index.html#explore">Services</a>
     <a href="#process">Process</a>
+    <a href="#project">Project</a>
     <a href="#about">About</a>
     <a href="#about">Contact Us</a>
     <button class="mobile-signup-btn"><strong>Get Started</strong></button>
@@ -52,15 +54,13 @@
       <span></span>
     </button>
 
-    <div class="input">
+    <form class="input" action="mailto:sandoratech01@gmail.com" method="post" enctype="text/plain">
       <div class="top-cont">
         <h2 id="signup-title" class="signup-h1"><strong>Start a <span class="p-highlight">Project</span></strong></h2>
         <div class="divider">
           <p class="text">Let's build something amazing together. Fill out this form below and I'll get back to you within 24 hours.</p>
         </div>
       </div>
-      
-      
           
           <input class="email" type="text" id="fullName" placeholder="Full Name" required />
      
@@ -81,7 +81,8 @@
       <textarea class="project-description" id="description" rows="2" placeholder="Tell me about your project..." required></textarea>
       
       <button type="submit" class="signup-button"><span class="sign">Submit</span></button>
-    </div>
+      
+    </form>
   </div>
 
   <!-- Hero Section -->
@@ -259,10 +260,12 @@
     <img class="end-img" src="images/secondBG.jpeg" alt="Team collaboration" />
   </section>
   
-  
+  <!-- project section -->
+   <span id="project"></span>
   <section class="project-cont" aria-label="Company Projects">
+     
       
-      <iframe src="https://nelf.gov.ng/" width="99.5%" height="400" margin-right="10%"></iframe>
+      <iframe src="https://www.remove.bg/upload/" width="90%" height="400" style="border: none; border-radius: 10px; margin-left: 5%;"></iframe>
   </section>
 
   <!-- Stats Section -->
@@ -320,7 +323,7 @@
     </div>
     <div class="button-container">
       <button class="action-btn1">Start Your Project</button>
-      <button class="action-btn2">Schedule a Call</button>
+      <button onclick="window.location.href='tel:08078896076'" class="action-btn2">Call Us</button>
     </div>
   </section>
 
