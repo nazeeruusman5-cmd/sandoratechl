@@ -223,8 +223,8 @@
           <img class="launch-icon" src="images/launch.png" alt="Launch Phase" />
         </div>
         <div>
-          <h3 class="process-card-h1">Launch & Support</h3>
-          <p class="process-card-prgh">We deploy your product and provide ongoing support to ensure success.</p>
+  <p class="process-card-h1">Launch & Support</p>
+ <p class="process-card-prgh">We deploy your product and provide ongoing support to ensure success.</p>
         </div>
       </article>
     </div>
@@ -265,9 +265,79 @@
 
   <section class="project-cont" aria-label="Company Projects">
       <p class="project-heading">Our Work</p>
-    <p class="project-heading2"><strong>We Deliver With Precision</strong></p> 
+    <p class="project-heading2"><strong>We Deliver With Precision</strong></p>
+    <div class="slider-container">
+  <div class="slider">
+
+    <div class="slide">
+      <iframe src="https://smartlearner01.netlify.app"></iframe>
+      <div class="caption">
+  <p class="heading-hh3">Project Name :<span class="p1"> Smart Learner</span></p>
+  <p class="p-label">Project Description</p>
+<p class="p">Smart Learner is a modern online learning platform designed to make education simple, interactive, and accessible. It helps students learn smarter through engaging tools and a user-friendly experience, anytime and anywhere.</p>
+<p class="p-label2">Display</p>
+  <p class="pp">Responsive</p>
+      </div>
+    </div>
+
+    <div class="slide">
+      <iframe src="https://vtuapp01.netlify.app"></iframe>
+      <div class="caption">
+  <p class="heading-hh3">Project Name :<span class="p1" >VTU App</span></p>
+  <p class="p-label">Project Description</p>
+    <p class="p">VTU App is a fast and reliable digital platform that makes airtime purchase, data subscriptions, and bill payments simple and secure. Designed with a user-friendly interface, it provides convenient virtual top-up services anytime and anywhere.</p>
+    <p class="p-label2">Display</p>
+    <p class="pp">Responsive</p>
+      </div>
+    </div>
+
+    <div class="slide">
+      <iframe src="https://Ozystore01.netlify.app"></iframe>
+      <div class="caption">
+<p class="heading-hh3">Project Name :<span class="p1">Ozy Store</span></p>  
+<p class="p-label">Project Description</p>     
+ <p class="p">OzyStore is a modern online shopping management system, built for convenience and simplicity. It offers a smooth user experience with easy navigation, quality products, and a clean design that makes browsing and shopping fast, secure, and stress-free.</p>
+ <p class="p-label2">Display</p>
+ <p class="pp">Desktop</p>
+      </div>
+    </div>
+
+    <div class="slide">
+      <iframe src="https://supermarketpos01.netlify.app"></iframe>
+      <div class="caption">
+           <p class="heading-hh3">Project Name :<span class="p1"> Supermarket POS Management System</span></p>
+         <p class="p-label">Project Description</p>
+    <p class="p">SupermarketPOS is a modern web-based point-of-sale system built for supermarkets and retail stores. It helps businesses manage sales, track inventory, process transactions, and streamline daily operations with speed, accuracy, and efficiency.</p>
+    <p class="p-label2">Display</p>
+    <p class="pp">Desktop</p> 
+      </div>
+    </div>
+
+    <div class="slide">
+      <iframe src="https://officemanagementsystem01.netlify.app"></iframe>
+      <div class="caption">
+        <p class="heading-hh3">Project Name :<span class="p1"> Office Management System</span></p>
+        <p class="p-label">Project Description</p>
+        <p class="p">Office Management System is a simple and efficient platform for managing office tasks like staff records, documents, and workflows in one place. It helps improve organization, productivity, and team coordination.</p>
+        <p class="p-label2">Display</p>
+       <p class="pp">Desktop</p>
+      </div>
+    </div>
+    <div class="slide">
+      <iframe src="https://pointofsale01.netlify.app"></iframe>
+      <div class="caption">
+        <p class="heading-hh3">Project Name :<span class="p1"> Point of Sale (POS) System</span></p>
+        <p class="p-label">Project Description</p>
+        <p class="p">Point of Sale (POS) System is a web-based application designed to manage sales, inventory, and transactions in one place. It allows businesses to process payments, track products, and monitor daily sales easily. The system helps improve efficiency, accuracy, and overall business management for retail and small shops.</p>
+        <p class="p-label2">Display</p>
+       <p class="pp">Desktop</p>
+      </div>
+    </div>
+
+  </div>
+</div>
       
-      <iframe src="https://www.tvet.education.gov.ng/" width="90%" height="400" style="border: 0.1px solid green; border-radius: 10px; margin-left: 5%;"></iframe>
+
   </section>
 
   <!-- Stats Section -->
@@ -451,6 +521,26 @@ mobileLinks.forEach(link => {
         closeMobileMenu();
       }
     });
+    
+    let index = 0;
+
+const slider = document.querySelector(".slider");
+const slides = document.querySelectorAll(".slide");
+const total = slides.length;
+
+function moveSlide() {
+  index++;
+
+  if (index >= total) {
+    index = 0;
+  }
+
+  slider.style.transform = `translateX(-${index * 100}%)`;
+}
+
+// slower speed (6 seconds)
+setInterval(moveSlide, 6000); 
+    
   </script>
 </body>
-</html>
+          </html>
